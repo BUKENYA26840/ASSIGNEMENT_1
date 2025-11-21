@@ -1,6 +1,6 @@
 # ASSIGNMENT_1
 
-Learning Objectives:
+ Objectives:
 
  Demonstrate inheritance across 10 related classes.
 
@@ -12,7 +12,7 @@ Learning Objectives:
  Accept user input using the Scanner class.
 
 
- Implement generateBill() in the final class.
+ Implement methods() in the final classes.
 
 TASKS COVERED;
 
