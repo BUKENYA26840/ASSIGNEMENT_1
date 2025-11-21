@@ -1,0 +1,3 @@
+package Question8;
+
+class Record extends Payment { protected double totalFine; public Record(int id, String libraryName, String location, String phoneNumber, String sectionName, String sectionCode, String title, String author, String ISBN, String memberName, int memberId, String contactNumber, String borrowDate, String returnDate, double fineAmount, int daysLate, String paymentDate, String paymentMode){ super(id, libraryName, location, phoneNumber, sectionName, sectionCode, title, author, ISBN, memberName, memberId, contactNumber, borrowDate, returnDate, fineAmount, daysLate, paymentDate, paymentMode); setTotalFine(fineAmount);} public void setTotalFine(double t){ this.totalFine = Math.max(0.01, t);} }

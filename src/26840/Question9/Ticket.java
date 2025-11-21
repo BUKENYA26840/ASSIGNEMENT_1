@@ -1,0 +1,3 @@
+package Question9;
+
+class Ticket extends Seat { protected String ticketNumber; protected double price; public Ticket(int id, String airlineName, String address, String contactEmail, String flightNumber, String destination, String departureTime, String passengerName, String passportNumber, String nationality, String seatNumber, String seatType, String ticketNumber, double price){ super(id, airlineName, address, contactEmail, flightNumber, destination, departureTime, passengerName, passportNumber, nationality, seatNumber, seatType); this.ticketNumber = ticketNumber; setPrice(price);} public void setPrice(double p){ this.price = Math.max(0.01, p);} }

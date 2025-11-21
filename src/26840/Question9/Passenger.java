@@ -1,0 +1,3 @@
+package Question9;
+
+class Passenger extends Flight { protected String passengerName; protected String passportNumber; protected String nationality; public Passenger(int id, String airlineName, String address, String contactEmail, String flightNumber, String destination, String departureTime, String passengerName, String passportNumber, String nationality){ super(id, airlineName, address, contactEmail, flightNumber, destination, departureTime); this.passengerName = passengerName; setPassportNumber(passportNumber); this.nationality = nationality;} public void setPassportNumber(String p){ if (p!=null && !p.trim().isEmpty()) this.passportNumber = p; else this.passportNumber = "N/A";} }

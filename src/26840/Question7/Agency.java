@@ -1,0 +1,3 @@
+package Question7;
+
+class Agency extends Entity { protected String agencyName; protected String location; protected String phoneNumber; public Agency(int id, String agencyName, String location, String phoneNumber){ super(id); this.agencyName = agencyName; this.location = location; setPhoneNumber(phoneNumber);} public void setPhoneNumber(String p){ if (p!=null && p.matches("\\d{10}")) this.phoneNumber = p; else this.phoneNumber = "0000000000";} }

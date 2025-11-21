@@ -1,0 +1,3 @@
+package Question7;
+
+class Agreement extends Buyer { protected String agreementDate; protected String terms; public Agreement(int id, String agencyName, String location, String phoneNumber, String agentName, String emailAgent, String licenseNumber, String propertyCode, String propertyType, double price, String sellerName, String contactNumber, String buyerName, String email, String agreementDate, String terms){ super(id, agencyName, location, phoneNumber, agentName, emailAgent, licenseNumber, propertyCode, propertyType, price, sellerName, contactNumber, buyerName, email); this.agreementDate = agreementDate; this.terms = (terms!=null && !terms.trim().isEmpty())?terms:"N/A";} }

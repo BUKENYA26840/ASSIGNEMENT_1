@@ -1,0 +1,3 @@
+package Question9;
+
+class Invoice extends Payment { protected double totalFare; public Invoice(int id, String airlineName, String address, String contactEmail, String flightNumber, String destination, String departureTime, String passengerName, String passportNumber, String nationality, String seatNumber, String seatType, String ticketNumber, double price, double baggageWeight, double baggageFee, String paymentDate, String paymentMode){ super(id, airlineName, address, contactEmail, flightNumber, destination, departureTime, passengerName, passportNumber, nationality, seatNumber, seatType, ticketNumber, price, baggageWeight, baggageFee, paymentDate, paymentMode); setTotalFare(price + baggageFee);} public void setTotalFare(double t){ this.totalFare = Math.max(0.01, t);} }

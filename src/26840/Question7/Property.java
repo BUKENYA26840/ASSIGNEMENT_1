@@ -1,0 +1,3 @@
+package Question7;
+
+class Property extends Agent { protected String propertyCode; protected String propertyType; protected double price; public Property(int id, String agencyName, String location, String phoneNumber, String agentName, String email, String licenseNumber, String propertyCode, String propertyType, double price){ super(id, agencyName, location, phoneNumber, agentName, email, licenseNumber); this.propertyCode = propertyCode; this.propertyType = propertyType; setPrice(price);} public void setPrice(double p){ this.price = Math.max(0.01, p);} }

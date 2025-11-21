@@ -1,0 +1,3 @@
+package Question9;
+
+class Baggage extends Ticket { protected double baggageWeight; protected double baggageFee; public Baggage(int id, String airlineName, String address, String contactEmail, String flightNumber, String destination, String departureTime, String passengerName, String passportNumber, String nationality, String seatNumber, String seatType, String ticketNumber, double price, double baggageWeight, double baggageFee){ super(id, airlineName, address, contactEmail, flightNumber, destination, departureTime, passengerName, passportNumber, nationality, seatNumber, seatType, ticketNumber, price); this.baggageWeight = Math.max(0.0, baggageWeight); this.baggageFee = Math.max(0.0, baggageFee);} }

@@ -1,0 +1,3 @@
+package Question8;
+
+class Fine extends Borrow { protected double fineAmount; protected int daysLate; public Fine(int id, String libraryName, String location, String phoneNumber, String sectionName, String sectionCode, String title, String author, String ISBN, String memberName, int memberId, String contactNumber, String borrowDate, String returnDate, double fineAmount, int daysLate){ super(id, libraryName, location, phoneNumber, sectionName, sectionCode, title, author, ISBN, memberName, memberId, contactNumber, borrowDate, returnDate); setFineAmount(fineAmount); setDaysLate(daysLate);} public void setFineAmount(double f){ this.fineAmount = Math.max(0.0, f);} public void setDaysLate(int d){ this.daysLate = Math.max(0, d);} }

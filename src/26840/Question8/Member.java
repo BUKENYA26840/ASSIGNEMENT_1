@@ -1,0 +1,3 @@
+package Question8;
+
+class Member extends Book { protected String memberName; protected int memberId; protected String contactNumber; public Member(int id, String libraryName, String location, String phoneNumber, String sectionName, String sectionCode, String title, String author, String ISBN, String memberName, int memberId, String contactNumber){ super(id, libraryName, location, phoneNumber, sectionName, sectionCode, title, author, ISBN); this.memberName = memberName; setMemberId(memberId); this.contactNumber = contactNumber;} public void setMemberId(int m){ if (m>0) this.memberId = m; else this.memberId = 1;} }

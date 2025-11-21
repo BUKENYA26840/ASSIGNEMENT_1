@@ -1,0 +1,3 @@
+package Question8;
+
+class Borrow extends Member { protected String borrowDate; protected String returnDate; public Borrow(int id, String libraryName, String location, String phoneNumber, String sectionName, String sectionCode, String title, String author, String ISBN, String memberName, int memberId, String contactNumber, String borrowDate, String returnDate){ super(id, libraryName, location, phoneNumber, sectionName, sectionCode, title, author, ISBN, memberName, memberId, contactNumber); this.borrowDate = (borrowDate!=null)?borrowDate:""; this.returnDate = (returnDate!=null)?returnDate:""; } }

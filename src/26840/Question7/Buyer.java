@@ -1,0 +1,3 @@
+package Question7;
+
+class Buyer extends Seller { protected String buyerName; protected String email; public Buyer(int id, String agencyName, String location, String phoneNumber, String agentName, String emailAgent, String licenseNumber, String propertyCode, String propertyType, double price, String sellerName, String contactNumber, String buyerName, String email){ super(id, agencyName, location, phoneNumber, agentName, emailAgent, licenseNumber, propertyCode, propertyType, price, sellerName, contactNumber); this.buyerName = buyerName; setEmailBuyer(email);} public void setEmailBuyer(String e){ if (e!=null && e.matches("^.+@.+\\..+$")) this.email = e; else this.email = "unknown@domain.com";} }

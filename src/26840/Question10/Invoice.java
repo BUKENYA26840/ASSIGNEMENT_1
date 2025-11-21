@@ -1,0 +1,3 @@
+package Question10;
+
+class Invoice extends Shipping { protected double totalAmount; public Invoice(int id, String storeName, String address, String email, String categoryName, String categoryCode, String productName, String productCode, double price, String customerName, String contactNumber, String addressCust, String orderDate, String orderId, String paymentMethod, String paymentStatus, String shippingAddress, double shippingCost){ super(id, storeName, address, email, categoryName, categoryCode, productName, productCode, price, customerName, contactNumber, addressCust, orderDate, orderId, paymentMethod, paymentStatus, shippingAddress, shippingCost); setTotalAmount(price + shippingCost);} public void setTotalAmount(double t){ this.totalAmount = Math.max(0.01,t);} }

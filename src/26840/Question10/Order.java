@@ -1,0 +1,3 @@
+package Question10;
+
+class Order extends Customer { protected String orderDate; protected String orderId; public Order(int id, String storeName, String address, String email, String categoryName, String categoryCode, String productName, String productCode, double price, String customerName, String contactNumber, String addressCust, String orderDate, String orderId){ super(id, storeName, address, email, categoryName, categoryCode, productName, productCode, price, customerName, contactNumber, addressCust); this.orderDate = (orderDate!=null)?orderDate:""; this.orderId = (orderId!=null)?orderId:""; } }

@@ -1,0 +1,3 @@
+package Question7;
+
+final class RealEstateRecord extends Commission { public RealEstateRecord(int id, String agencyName, String location, String phoneNumber, String agentName, String emailAgent, String licenseNumber, String propertyCode, String propertyType, double price, String sellerName, String contactNumber, String buyerName, String email, String agreementDate, String terms, double paymentAmount, String paymentDate, double commissionRate){ super(id, agencyName, location, phoneNumber, agentName, emailAgent, licenseNumber, propertyCode, propertyType, price, sellerName, contactNumber, buyerName, email, agreementDate, terms, paymentAmount, paymentDate, commissionRate); } public double calculateCommission(){ return (this.price * this.commissionRate)/100.0; } }

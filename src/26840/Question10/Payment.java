@@ -1,0 +1,3 @@
+package Question10;
+
+class Payment extends Order { protected String paymentMethod; protected String paymentStatus; public Payment(int id, String storeName, String address, String email, String categoryName, String categoryCode, String productName, String productCode, double price, String customerName, String contactNumber, String addressCust, String orderDate, String orderId, String paymentMethod, String paymentStatus){ super(id, storeName, address, email, categoryName, categoryCode, productName, productCode, price, customerName, contactNumber, addressCust, orderDate, orderId); this.paymentMethod = (paymentMethod!=null)?paymentMethod:""; this.paymentStatus = (paymentStatus!=null)?paymentStatus:"";} }

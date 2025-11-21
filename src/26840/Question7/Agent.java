@@ -1,0 +1,3 @@
+package Question7;
+
+class Agent extends Agency { protected String agentName; protected String email; protected String licenseNumber; public Agent(int id, String agencyName, String location, String phoneNumber, String agentName, String email, String licenseNumber){ super(id, agencyName, location, phoneNumber); this.agentName = agentName; setEmail(email); this.licenseNumber = licenseNumber;} public void setEmail(String e){ if (e!=null && e.matches("^.+@.+\\..+$")) this.email = e; else this.email = "unknown@domain.com";} }
